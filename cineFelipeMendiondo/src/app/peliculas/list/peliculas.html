@@ -1,0 +1,17 @@
+<h2>Peliculas</h2>
+
+<input type="text"
+  placeholder="Buscar pelicula..."
+  [value]="filter()"
+  (input)="filter.set($any($event.target).value)">
+
+@for (p of peliculas(); track p.id) {
+  <a [routerLink]="['/Peliculas', p.id]">
+    <app-peliculas-card
+      [pelicula]="p"
+      [duracion]="3"
+      cardSize="lg" />
+  </a>
+} @empty {
+  <p class="empty">Sin películas todavía</p>
+}

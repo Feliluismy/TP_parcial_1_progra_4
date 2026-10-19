@@ -1,4 +1,4 @@
-:host {
+/*:host {
     display: block;
     width: 100%;
     min-height: 100vh;
@@ -43,4 +43,4 @@ nav h1 :hover {
         justify-content: center;
     }
 
-}
+}*/

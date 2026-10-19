@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AuthLogIn } from './auth-log-in';
+
+describe('AuthLogIn', () => {
+  let component: AuthLogIn;
+  let fixture: ComponentFixture<AuthLogIn>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AuthLogIn],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(AuthLogIn);
+    component = fixture.componentInstance;
+    await fixture.whenStable();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

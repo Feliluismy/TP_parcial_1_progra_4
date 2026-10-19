@@ -1,0 +1,43 @@
+:host {
+    display: block;
+    max-width: 560px;
+    font-family: system-ui, sans-serif;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    border-color: #36AA7E;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #125E42;
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 14px;
+}
+
+/* Estado */
+.badge {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background: #eef3f0;
+    color: #125E42;
+}

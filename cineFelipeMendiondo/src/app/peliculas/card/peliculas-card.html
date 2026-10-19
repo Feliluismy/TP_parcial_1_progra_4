@@ -1,0 +1,17 @@
+<article class="card" [class.compact]="compact()">
+    <h3>{{ pelicula().nombre }}</h3>
+
+    <p class="info">
+        <span class="badge">
+            Estado: {{ pelicula().imagen}}
+        </span>
+
+        <span class="sinopsis">
+            descripcion: {{ pelicula().sinopsis}}
+        </span>
+
+        <span class="duracion">
+            duracion: {{ duracion() }}
+        </span>
+    </p>
+</article>
