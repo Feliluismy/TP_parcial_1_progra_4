@@ -1,0 +1,50 @@
+:host {
+    display: block;
+    max-width: 560px;
+    font-family: system-ui, sans-serif;
+}
+
+.grid-peliculas {
+  list-style: none;          /* quita los puntitos de la lista */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards por fila */
+  row-gap: 3rem;      /* más separación entre filas (arriba y abajo) */
+  column-gap: 1.5rem; /* separación horizontal, la podés dejar como estaba */
+}
+
+.card {
+  height: 100%;              /* todas las cards de la misma altura */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    border-color: #36AA7E;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #125E42;
+    font-size: 18px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 14px;
+}
+
+/* Estado */
+.badge {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    background: #eef3f0;
+    color: #125E42;
+}

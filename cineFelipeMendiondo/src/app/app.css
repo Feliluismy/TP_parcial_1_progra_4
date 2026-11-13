@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  /* height: 100dvh;  ← eliminar */
+}
+
+main {
+  width: 100%;
+  display: block;   /* antes era flex con align-items:center */
+  padding: 1rem;
+  box-sizing: border-box;
+  /* min-height: 100%;  ← eliminar */
+}

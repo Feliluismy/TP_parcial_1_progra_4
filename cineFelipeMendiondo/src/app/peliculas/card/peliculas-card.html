@@ -1,0 +1,23 @@
+<ul class="grid-peliculas">
+@for (p of peliculas(); track p.id) {
+    <li>
+    <article class="card">
+        <p class="info">
+        <span class="badge">
+            Estado: {{ p.imagen }}
+        </span>
+
+        <span class="sinopsis">
+            descripcion: {{ p.sinopsis }}
+        </span>
+
+        <span class="duracion">
+            duracion: {{ p.duracion }}
+        </span>
+        </p>
+        <button>"Seleccionar"</button>
+    </article>
+    
+    </li>
+}
+</ul>
