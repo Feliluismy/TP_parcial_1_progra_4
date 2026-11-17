@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { environments } from '../../environments/environment-prod';
-import { Pelicula } from '../peliculas/peliculas-model';
+import { Pelicula } from '../peliculas/peliculas.model';
 
 
 @Injectable({ providedIn: 'root' })

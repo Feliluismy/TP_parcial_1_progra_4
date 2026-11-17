@@ -6,13 +6,19 @@ export interface Pelicula {
     duracion: number;
 }
 
+/* esto es para:
+CREAR UNA PELICULA, NO PARA MOSTRARLA ANIMAL
+
 export type PeliculaDraft = Omit<Pelicula, 'id'>;
+omite el ID a la hora de createEmptyTicketDraft
+una nueva pelicula
 export type PeliculaPatch = Partial<Pelicula>;
+permite que una variable pueda quedar vacia (para este TP, inutil)
 export function createEmptyPeliculaDraft(): PeliculaDraft{
-    return {
-        nombre: "",
+return {
+       nombre: "",
         imagen: "",
-        sinopsis: "",
+       sinopsis: "",
         duracion: 0,
     };
-}
+}*/

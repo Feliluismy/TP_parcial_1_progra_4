@@ -1,6 +1,6 @@
 import { Injectable, signal } from "@angular/core";
 import { supabase } from "../supabase.client";
-import { Pelicula, PeliculaPatch } from "./peliculas-model";
+import { Pelicula } from "./peliculas.model";
 
 
 @Injectable({providedIn : "root"})
@@ -29,7 +29,7 @@ export class PeliculasStore{
         this.loading.set(false);
     }
 
-    async add(nombre: string, imagen: string, sinopsis: string){
+    /*async agregar(nombre: string, imagen: string, sinopsis: string){
         const {data, error} = await this.db
         .from('peliculas')
         .insert({nombre, imagen, sinopsis})
@@ -38,12 +38,12 @@ export class PeliculasStore{
         this.peliculas.update(ps => [...ps ,data]);
     }
 
-    async update(id : number, path : PeliculaPatch){
+    async actualizar(id : number, path : PeliculaPatch){
         const {error} = await this.db
         .from('peliculas').update(path).eq('id', id);
         if(error)throw error;
         this.peliculas.update(ps => ps.map(p => p.id === id ? {...p, ...path}:p))
-    }
+    }*/
 
     async remove(id : number){
         const {error} = await this.db
